@@ -1,0 +1,1 @@
+# NextJS base repository
