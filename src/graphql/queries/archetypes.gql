@@ -1,0 +1,6 @@
+query GetArchetypes {
+  archetypes {
+    id
+    name
+  }
+}

@@ -13,7 +13,7 @@ echo '
   '
 
 ## Running check-types
-npm run check-types ||
+yarn type:check ||
 (
   echo '\e[1;41m FAILED: type verification \e[1;0m
   '
@@ -35,14 +35,14 @@ echo '
   '
 
 ## Running check-format
-npm run check-format ||
+yarn format:check ||
 (
   echo '
   \e[1;41m FAILED: format verification \e[1;0m
 
   \e[1m\e[4mTo fix, follow the following steps:\e[1;0m
 
-    \e[1;34m1.\e[1;0m Run \e[1;34m`npm run format`\e[1;0m
+    \e[1;34m1.\e[1;0m Run \e[1;34m`yarn format`\e[1;0m
 
     \e[1;34m2.\e[1;0m \e[1mAdd changes\e[1;0m
 
@@ -66,7 +66,7 @@ echo '
   '
 
 ## Running check-lint
-npm run check-lint ||
+yarn lint:check ||
 (
   echo '
   \e[1;41m FAILED: eslint verification \e[1;0m
@@ -106,7 +106,7 @@ echo '
   '
 
 ## Running build
-npm run build ||
+yarn build ||
 (
   echo '
   \e[1;41m FAILED: run build \e[1;0m

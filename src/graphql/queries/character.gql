@@ -1,0 +1,28 @@
+query GetCharacter($codename: String!) {
+  character(where: { codename: $codename }) {
+    id
+    image {
+      url
+    }
+    codename
+    story {
+      html
+    }
+    team {
+      id
+      name
+    }
+    localization {
+      id
+      name
+    }
+    brand {
+      id
+      name
+    }
+    archetype {
+      name
+      id
+    }
+  }
+}

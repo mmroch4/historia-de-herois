@@ -1,0 +1,13 @@
+query GetArchetype($name: String!) {
+  archetype(where: { name: $name }) {
+    id
+    name
+    characters {
+      id
+      codename
+      image {
+        url
+      }
+    }
+  }
+}

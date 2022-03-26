@@ -1,0 +1,9 @@
+query GetBrands {
+  brands {
+    id
+    name
+    image {
+      url
+    }
+  }
+}

@@ -1,0 +1,28 @@
+query GetCharacters {
+  characters {
+    id
+    image {
+      url
+    }
+    codename
+    introduction
+    story {
+      html
+    }
+    archetype {
+      name
+    }
+    localization {
+      name
+    }
+    team {
+      name
+    }
+    brand {
+      name
+      image {
+        url
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+query GetTeam($name: String!) {
+  team(where: { name: $name }) {
+    id
+    name
+    characters {
+      id
+      codename
+      image {
+        url
+      }
+    }
+  }
+}

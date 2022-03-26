@@ -1,0 +1,16 @@
+query GetBrand($name: String!) {
+  brand(where: { name: $name }) {
+    id
+    image {
+      url
+    }
+    name
+    characters {
+      id
+      codename
+      image {
+        url
+      }
+    }
+  }
+}

@@ -1,0 +1,6 @@
+query GetLocations {
+  localizations {
+    id
+    name
+  }
+}

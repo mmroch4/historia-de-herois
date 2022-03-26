@@ -1,0 +1,13 @@
+query GetLocation($name: String!) {
+  localization(where: { name: $name }) {
+    id
+    name
+    characters {
+      id
+      codename
+      image {
+        url
+      }
+    }
+  }
+}
